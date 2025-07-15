@@ -10,7 +10,7 @@ public:
         for (int i = 1 ; i < intervals.size();i++){
             if (intervals[i][0] <= ret[ret.size()-1][1]){
                 // overlap occur
-                if (intervals[i][1] >= intervals[i-1][1]){
+                if (intervals[i][1] >= ret[ret.size()-1][1]){
                     // partially  overlapped
                     ret[ret.size()-1][1] = intervals[i][1];
                 }
