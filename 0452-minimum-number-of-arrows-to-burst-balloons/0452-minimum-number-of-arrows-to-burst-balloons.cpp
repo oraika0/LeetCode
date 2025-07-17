@@ -21,10 +21,6 @@ public:
         
         int ret = 1;
         sort(points.begin(),points.end());
-        for(auto point : points){
-            cout << point[0] << "," << point[1] << endl;
-        }
-        cout << endl;
         int lastPos = points[0][1];
         for (auto point : points){
             if (lastPos >= point[0]){
