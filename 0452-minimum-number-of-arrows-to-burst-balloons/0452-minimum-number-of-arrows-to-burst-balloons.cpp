@@ -18,10 +18,10 @@ public:
         if (points.size() == 0){
             return 0;
         } 
-        
         int ret = 1;
-        sort(points.begin(),points.end());
         int lastPos = points[0][1];
+        sort(points.begin(),points.end());
+        
         for (auto point : points){
             if (lastPos >= point[0]){
                 // can be covered by the same arrow
